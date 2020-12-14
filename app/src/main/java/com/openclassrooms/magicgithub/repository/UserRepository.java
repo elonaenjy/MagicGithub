@@ -14,14 +14,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.openclassrooms.magicgithub.api.FakeApiServiceGenerator.generateUsers;
-import static com.openclassrooms.magicgithub.api.FakeApiServiceGenerator.nonAfficheUsers;
 
 public class UserRepository {
 
     private final ApiService apiService; //
     // TODO: A utiliser --> OK
     private List<User> users = generateUsers();
-    private List<User> usersNonAffiche = nonAfficheUsers();
 
 
     public UserRepository(ApiService apiService) {

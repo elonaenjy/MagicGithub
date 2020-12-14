@@ -5,14 +5,13 @@ import com.openclassrooms.magicgithub.model.User;
 import java.util.ArrayList;
 import java.util.List;
 import static com.openclassrooms.magicgithub.api.FakeApiServiceGenerator.generateUsers;
-import static com.openclassrooms.magicgithub.api.FakeApiServiceGenerator.nonAfficheUsers;
+
 
 import  com.openclassrooms.magicgithub.repository.UserRepository.*;
 
 public class FakeApiService implements ApiService {
 
     private List<User> users = generateUsers();
-    private List<User> usersNonAffiche = nonAfficheUsers();
 
     /**
      * Return a list of {@link User}
