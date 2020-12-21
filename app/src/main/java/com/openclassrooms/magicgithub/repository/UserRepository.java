@@ -18,7 +18,7 @@ import static com.openclassrooms.magicgithub.api.FakeApiServiceGenerator.generat
 public class UserRepository {
 
     private final ApiService apiService; //
-    // TODO: A utiliser --> OK
+    //
     private List<User> users = generateUsers();
 
 
@@ -27,14 +27,14 @@ public class UserRepository {
     }
 
     public List<User> getUsers() {
-        // TODO: ==> ok
+        //
         List<User> liste = new ArrayList<User>();
         liste = users;
         return liste;
     }
 
     public void generateRandomUser() {
-        // TODO: ok
+        //
         User personne = User.random();
         List<User> liste = new ArrayList<User>();
         liste = users;
@@ -42,7 +42,7 @@ public class UserRepository {
     }
 
     public void deleteUser(User user) {
-        // TODO: ok
+        //
         List<User> liste = new ArrayList<User>();
         liste = users;
         liste.remove( user);

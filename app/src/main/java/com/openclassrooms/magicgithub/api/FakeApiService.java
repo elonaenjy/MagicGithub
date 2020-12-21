@@ -31,7 +31,6 @@ public class FakeApiService implements ApiService {
      */
     @Override
     public void generateRandomUser() {
-        // TODO: A modifier ==> ok
         //
         User personne = User.random();
         List<User> liste = new ArrayList<User>();
@@ -44,7 +43,7 @@ public class FakeApiService implements ApiService {
      */
     @Override
     public void deleteUser(User user) {
-        // TODO: ok
+        //
         List<User> liste = new ArrayList<User>();
         liste = users;
         liste.remove( user);
