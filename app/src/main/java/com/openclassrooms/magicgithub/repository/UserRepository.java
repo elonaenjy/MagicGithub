@@ -28,25 +28,17 @@ public class UserRepository {
 
     public List<User> getUsers() {
         //
-        List<User> liste = new ArrayList<User>();
-        liste = users;
-        return liste;
+        return apiService.getUsers();
     }
 
     public void generateRandomUser() {
         //
-        User personne = User.random();
-        List<User> liste = new ArrayList<User>();
-        liste = users;
-        liste.add(personne);
+        apiService.generateRandomUser();
     }
 
     public void deleteUser(User user) {
         //
-        List<User> liste = new ArrayList<User>();
-        liste = users;
-        liste.remove( user);
-
+        apiService.deleteUser(user);
     }
 
 }
