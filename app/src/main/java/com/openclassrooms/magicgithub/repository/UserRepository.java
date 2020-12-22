@@ -6,7 +6,6 @@ import com.openclassrooms.magicgithub.api.ApiService;
 import com.openclassrooms.magicgithub.api.FakeApiService;
 import com.openclassrooms.magicgithub.model.User;
 import com.openclassrooms.magicgithub.ui.user_list.ListUserActivity;
-import com.openclassrooms.magicgithub.ui.user_list.ListUserActivity;
 
 import static com.openclassrooms.magicgithub.api.FakeApiServiceGenerator.generateUsers;
 
@@ -20,7 +19,6 @@ public class UserRepository {
     private final ApiService apiService; //
     //
     private List<User> users = generateUsers();
-
 
     public UserRepository(ApiService apiService) {
         this.apiService = apiService;
@@ -40,6 +38,5 @@ public class UserRepository {
         //
         apiService.deleteUser(user);
     }
-
 }
 

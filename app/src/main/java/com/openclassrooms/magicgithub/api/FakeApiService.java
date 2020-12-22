@@ -27,11 +27,10 @@ public class FakeApiService implements ApiService {
      * Generate a random {@link User} and add it {@link FakeApiService#users} list.
      * This user must be get from the {@link FakeApiServiceGenerator#FAKE_USERS_RANDOM} list.
      */
-
     @Override
     public void generateRandomUser() {
         //
-        User.random();
+        users.add(User.random());
 
     }
 
